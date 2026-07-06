@@ -66,6 +66,11 @@ Kuratierte Ressourcenliste für klinische Interoperabilität, Systemarchitektur 
 - [Microsoft FHIR-Converter](https://github.com/microsoft/FHIR-Converter) — HL7 v2 → FHIR Konvertierung
 - [Azure Health Data Services Toolkit](https://github.com/microsoft/azure-health-data-services-toolkit) — Middleware für HL7/FHIR-Ingestion-Pipelines
 - [Metriport](https://github.com/metriport) — Universelle API für den Austausch von Gesundheitsdaten
+- [hl7apy](https://github.com/crs4/hl7apy) — Python-Bibliothek zum Parsen, Validieren und Erstellen von HL7 v2-Nachrichten
+
+### Semantische Interoperabilität
+
+- [Snowstorm](https://github.com/IHTSDO/snowstorm) — Offizieller SNOMED CT Terminologie-Server (SNOMED International, Elasticsearch-basiert)
 
 ### Testdaten
 
@@ -92,7 +97,7 @@ Kuratierte Ressourcenliste für klinische Interoperabilität, Systemarchitektur 
 - [AWS HealthLake](https://aws.amazon.com/healthlake) — Verwalteter FHIR-Datenspeicher
 - [Azure Health Data Services](https://azure.microsoft.com/en-us/products/health-data-services) — Verwalteter FHIR + DICOM + MedTech Service
 - [Google Healthcare API](https://cloud.google.com/healthcare-api) — Verwalteter FHIR-, DICOM- und HL7v2-Service
-- [fhir-works-on-aws](https://github.com/awslabs/fhir-works-on-aws) — FHIR Server auf AWS deployen
+- [fhir-works-on-aws](https://github.com/awslabs/fhir-works-on-aws) — Framework zur Bereitstellung eines FHIR-Servers auf AWS
 
 ## Security & Identity
 
