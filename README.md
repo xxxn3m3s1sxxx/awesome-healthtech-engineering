@@ -2,6 +2,19 @@
 
 Kuratierte Ressourcenliste für klinische Interoperabilität, Systemarchitektur und Software-Engineering im Gesundheitswesen.
 
+## Inhaltsverzeichnis
+
+- [Standards & Spezifikationen](#standards--spezifikationen)
+- [Open Source Tooling](#open-source-tooling)
+- [Conformance Testing & Compliance](#conformance-testing--compliance)
+- [Clinical Decision Support & Analytics](#clinical-decision-support--analytics)
+- [Cloud Health Data Services](#cloud-health-data-services)
+- [Security & Identity](#security--identity)
+- [Resilience & System-Architektur](#resilience--system-architektur)
+- [Regulierung & Compliance](#regulierung--compliance)
+- [Community & Austausch](#community--austausch)
+- [Learning Resources](#learning-resources)
+
 ## Standards & Spezifikationen
 
 - [FHIR R4 (HL7)](https://hl7.org/fhir/R4/) — Aktueller REST-Standard für klinische Daten
@@ -22,20 +35,37 @@ Kuratierte Ressourcenliste für klinische Interoperabilität, Systemarchitektur 
 - [pydicom](https://github.com/pydicom/pydicom) — Pure-Python DICOM-Bibliothek
 - [fo-dicom](https://github.com/fo-dicom/fo-dicom) — .NET DICOM-Bibliothek
 - [DCMTK](https://dicom.offis.de/dcmtk.php.en) — C++ DICOM-Toolkit (Referenzimplementierung)
+- [OHIF Viewer](https://github.com/OHIF/Viewers) — Zero-footprint DICOM-Viewer (Web)
+- [Cornerstone3D](https://github.com/cornerstonejs/cornerstone3D) — 3D-Rendering medizinischer Bilder im Browser
+- [dicomweb-server (Microsoft)](https://github.com/microsoft/dicom-server) — DICOMweb-konformer Server für Azure
 
-### FHIR
+### FHIR Server & Plattformen
 
 - [HAPI FHIR](https://hapifhir.io/) — Java FHIR Server + Client (Referenz)
+- [Medplum](https://github.com/medplum/medplum) — FHIR CDR mit React SDK, Auth und gehosteter Option
+- [LinuxForHealth FHIR Server](https://github.com/LinuxForHealth/FHIR) — Cloud-native FHIR Server mit Bulk-Data-Support (IBM-originiert)
+- [Aidbox](https://github.com/Aidbox) — FHIR Server + CDR von Health Samurai (PostgreSQL, Subscriptions)
+- [b.well FHIR Server](https://github.com/b-well-io/fhir-server) — MongoDB-basierter FHIR Server
 - [FHIR .NET API](https://github.com/FirelyTeam/firely-net-sdk) — .NET SDK (Firely)
+- [SUSHI](https://github.com/FHIR/sushi) — FHIR Shorthand → StructureDefinition Compiler
 - [fhirpath.js](https://github.com/HL7/fhirpath.js) — FHIRPath für JavaScript
 - [FHIR Validator](https://github.com/hapifhir/org.hl7.fhir.core) — Offizieller FHIR R4 Validator
-- [SUSHI](https://github.com/FHIR/sushi) — FHIR Shorthand → StructureDefinition Compiler
+
+### FHIR Client SDKs
+
+- [FHIR.js](https://github.com/FHIR/fhir.js) — JavaScript/TypeScript Client
+- [fhirclient (Python)](https://github.com/smart-on-fhir/client-py) — SMART on FHIR Python Client
+- [Android FHIR SDK](https://github.com/google/android-fhir) — Google FHIR SDK für Android (Structured Data Capture)
+- [FHIR Swift](https://github.com/smart-on-fhir/Swift-FHIR) — iOS / macOS Client
 
 ### Interoperabilitäts-Engines
 
 - [Mirth Connect](https://github.com/nextgenhealthcare/connect) — HL7 v2/v3 + FHIR Integration Engine (Java)
 - [Apache Camel](https://camel.apache.org/components/next/fhir-component.html) — FHIR-Komponente für Routing
 - [OpenHIM](https://openhim.org/) — Open Source Health Information Mediator
+- [Microsoft FHIR-Converter](https://github.com/microsoft/FHIR-Converter) — HL7 v2 → FHIR Konvertierung
+- [Azure Health Data Services Toolkit](https://github.com/microsoft/azure-health-data-services-toolkit) — Middleware für HL7/FHIR-Ingestion-Pipelines
+- [Metriport](https://github.com/metriport) — Universelle API für den Austausch von Gesundheitsdaten
 
 ### Testdaten
 
@@ -45,10 +75,34 @@ Kuratierte Ressourcenliste für klinische Interoperabilität, Systemarchitektur 
 - [FHIR Sample Data (Microsoft)](https://github.com/microsoft/fhir-server-samples) — Beispiel-Ressourcen für Dev/Test
 - [RSNA DICOM Sample Images](https://www.rsna.org/education/ai-resources-and-training/ai-image-challenge) — Radiologische Beispieldatensätze
 
+## Conformance Testing & Compliance
+
+- [Inferno](https://github.com/inferno-community/inferno) — ONC-zertifiziertes FHIR-Konformitätstest-Toolkit
+- [Crucible](https://github.com/fhir-crucible/crucible) — FHIR Server Test-Harness
+- [Touchstone](https://touchstone.aegis.net) — Kommerzielles Konformitätstesting (Referenz)
+
+## Clinical Decision Support & Analytics
+
+- [CQL Engine](https://github.com/cqframework/clinical_quality_language) — Clinical Quality Language Ausführungs-Engine
+- [SQL on FHIR v2](https://github.com/FHIR/sql-on-fhir) — Analytische SQL-Queries auf FHIR-Daten
+- [cds-hooks](https://github.com/cds-hooks) — Clinical Decision Support Hooks (Spezifikation + Referenz)
+
+## Cloud Health Data Services
+
+- [AWS HealthLake](https://aws.amazon.com/healthlake) — Verwalteter FHIR-Datenspeicher
+- [Azure Health Data Services](https://azure.microsoft.com/en-us/products/health-data-services) — Verwalteter FHIR + DICOM + MedTech Service
+- [Google Healthcare API](https://cloud.google.com/healthcare-api) — Verwalteter FHIR-, DICOM- und HL7v2-Service
+- [fhir-works-on-aws](https://github.com/awslabs/fhir-works-on-aws) — FHIR Server auf AWS deployen
+
+## Security & Identity
+
+- [Keycloak](https://github.com/keycloak/keycloak) — Identity & Access Management (SMART on FHIR via Health Samurai Plugin)
+- [SMART on FHIR IG](https://github.com/HL7/smart-on-fhir-ig) — Implementation Guide mit Auth-Flows
+
 ## Resilience & System-Architektur
 
 - [Resilience4j](https://resilience4j.readme.io/) — Circuit Breaker + Retry für Java (Vorbild für Nicht-Java-Implementierungen)
-- [dicom-fhir-resilient-bridge](https://github.com/xxxn3m3s1sxxx/dicom-fhir-resilient-bridge) — Production-Grade Architektur-Scaffold mit Circuit Breaker, DLQ und FHIR-R4-Generierung
+- [dicom-fhir-resilient-bridge](https://github.com/xxxn3m3s1sxxx/dicom-fhir-resilient-bridge) — DICOM Directory Watcher → FHIR mit Circuit Breaker, Retry-Policy und 162 Tests (Python)
 - [Cloud Design Patterns (Azure)](https://learn.microsoft.com/en-us/azure/architecture/patterns/) — Circuit Breaker, Retry, Queue-Based Load Leveling
 - [Stoplight Spectral](https://github.com/stoplightio/spectral) — API Style-Guide Linter für FHIR-REST-konforme APIs
 
