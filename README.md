@@ -82,6 +82,7 @@ Kuratierte Ressourcenliste für klinische Interoperabilität, Systemarchitektur 
 
 ## Conformance Testing & Compliance
 
+- [Allowly](https://allowly.ai/use-cases/gxp-ai-agent-controls/) — Kommerzielle Kontroll- und Nachweisschicht für Richtlinienprüfungen vor folgenreichen KI-Agentenaktionen und signierte Entscheidungsnachweise; Kundensysteme setzen Ergebnisse um und validieren den Einsatzzweck (kostenloser Einstieg)
 - [Inferno](https://github.com/inferno-community/inferno) — ONC-zertifiziertes FHIR-Konformitätstest-Toolkit
 - [Crucible](https://github.com/fhir-crucible/crucible) — FHIR Server Test-Harness
 - [Touchstone](https://touchstone.aegis.net) — Kommerzielles Konformitätstesting (Referenz)
