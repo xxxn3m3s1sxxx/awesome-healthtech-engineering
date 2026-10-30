@@ -136,6 +136,7 @@ Kuratierte Ressourcenliste für klinische Interoperabilität, Systemarchitektur 
 - [Coursera: HI-FIVE (Health Informatics)](https://www.coursera.org/specializations/health-informatics) — Einführung in die Medizininformatik (Columbia University)
 - [MIT Critical Data Book](https://criticaldata.mit.edu/book/) — Open-Access-Buch zu Data Science im Gesundheitswesen
 - [OHDSI Tutorials](https://www.ohdsi.org/) — Observational Health Data Sciences and Informatics
+- [hl7-v2-samples](https://github.com/AckHarbor/hl7-v2-samples) — Fiktive HL7 v2.5 Beispielnachrichten (ADT, ORM, ORU, ACK AA/AE/AR mit ERR) und FHIR R4 Patient zum Testen von Parsern
 
 ## Lizenz
 
